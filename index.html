@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Uton Byg ApS - Professionel byggerådgivning og projektering">
+  <title>Uton Byg ApS</title>
+  <style>
+    :root {
+      --primary-color: #1a1a1a;
+      --accent-color: #e0a800;
+      --text-color: #333;
+      --background-color: #fdfdfd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: var(--accent-color);
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      margin: 2rem 0;
+    }
+
+    section {
+      max-width: 800px;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: var(--accent-color);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 0.5rem 1rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .cookie-banner p {
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .cookie-banner a {
+      color: #856404;
+      text-decoration: underline;
+      margin-left: 4px;
+    }
+
+    .cookie-banner div {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .cookie-banner button {
+      background-color: var(--accent-color);
+      color: #fff;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .cookie-banner {
+        font-size: 0.8rem;
+        padding: 0.75rem;
+      }
+
+      .cookie-banner button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Uton Byg ApS</h1>
+    <p>Byggerådgivning og projektering</p>
+  </header>
+
+  <img
+    src="https://via.placeholder.com/1200x600?text=Construction+Image"
+    alt="Construction related image"
+    class="hero-image"
+    loading="lazy"
+  />
+
+  <section>
+    <h2>Om os</h2>
+    <p>
+      Uton Byg ApS er en specialiseret virksomhed inden for byggerådgivning,
+      projektering og tømrerarbejde. Vi tilbyder skræddersyede løsninger til både
+      private og erhvervskunder med fokus på kvalitet og bæredygtighed.
+    </p>
+    <p><strong>Etableret:</strong> 2018</p>
+    <p><strong>Lokation:</strong> Hjaltesvej 4, 9800 Bagterp, Nordjylland</p>
+    <p><strong>Kontakt:</strong> <a href="mailto:info@uton.dk">info@uton.dk</a> | <a href="http://www.uton.dk">www.uton.dk</a></p>
+  </section>
+
+  <section>
+    <h2>Vores Tjenester</h2>
+    <ul>
+      <li>Byggerådgivning - professionel vejledning gennem hele byggeprocessen.</li>
+      <li>Projektering - detaljeret planlægning og design af byggeprojekter.</li>
+      <li>Tømrerarbejde - kvalitetsarbejde udført af erfarne håndværkere.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Kontakt Os</h2>
+    <p>
+      Har du spørgsmål eller ønsker du et uforpligtende tilbud? Kontakt os i dag,
+      og lad os hjælpe dig med dit næste byggeprojekt.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Uton Byg ApS. Alle rettigheder forbeholdes.
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <p>
+      Denne side bruger cookies for at forbedre brugeroplevelsen.
+      <a href="#">Læs vores cookiepolitik</a>.
+    </p>
+    <div>
+      <button onclick="acceptCookies()">Accepter</button>
+      <button onclick="declineCookies()">Afvis</button>
+    </div>
+  </div>
+
+  <script>
+    function setCookie(name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      document.cookie = name + "=" + value + ";expires=" + date.toUTCString() + ";path=/";
+    }
+
+    function getCookie(name) {
+      const value = "; " + document.cookie;
+      const parts = value.split("; " + name + "=");
+      if (parts.length === 2) return parts.pop().split(";").shift();
+    }
+
+    function acceptCookies() {
+      setCookie("cookiesAccepted", "true", 30);
+      document.getElementById("cookieBanner").style.display = "none";
+    }
+
+    function declineCookies() {
+      setCookie("cookiesAccepted", "false", 30);
+      document.getElementById("cookieBanner").style.display = "none";
+    }
+
+    window.onload = function () {
+      const consent = getCookie("cookiesAccepted");
+      if (consent === "true" || consent === "false") {
+        document.getElementById("cookieBanner").style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
